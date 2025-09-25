@@ -261,16 +261,16 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     logger.info(f"用户 {update.effective_user.id} 执行 /start")
 
     # 发送欢迎消息
-    welcome_message = """🤖 欢迎使用镜像搜索机器人
+    welcome_message = """🤖 欢迎使用搜索机器人
 
-暂时支持的搜索指令：
+暂时支持的搜索指令
 
-📊 群组目录 /topchat
-🔍 群组搜索 /search
-📝 按消息文本搜索 /text
-👤 按名称搜索 /human
+- 群组目录 /topchat
+- 群组搜索 /search
+- 按消息文本搜索 /text
+- 按名称搜索 /human
 
-直接点击指令或输入即可使用！"""
+直接输入指令即可使用！"""
 
     await update.message.reply_text(welcome_message)
 
